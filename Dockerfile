@@ -17,7 +17,7 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/*.jar api1-1.jar
 
-EXPOSE 8080
+EXPOSE 443
 
 CMD ["java", "-jar", "api1-1.jar"]
 
